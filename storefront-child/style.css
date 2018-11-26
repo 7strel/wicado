@@ -1,0 +1,103 @@
+/*
+Theme Name:   Storefront Child
+Theme URI:    https://woocommerce.com/storefront/
+Author:       7strel
+Author URI:   https://7strel.nl/
+Template:	  storefront
+Description:  Storefront (Child) is the perfect theme for your next WooCommerce project. Designed and developed by WooCommerce Core developers, it features a bespoke integration with WooCommerce itself plus many of the most popular customer facing WooCommerce extensions. There are several layout & color options to personalise your shop, multiple widget regions, a responsive design and much more. Developers will love its lean and extensible codebase making it a joy to customize and extend. Looking for a WooCommerce theme? Look no further!
+Version:      2.3.2
+License:      GNU General Public License v2 or later
+License URI:  https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  storefront-child
+Tags:         e-commerce, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready, rtl-language-support, footer-widgets, sticky-post, theme-options
+*/
+.sp-header-row:nth-child(3) {
+	background-color: #81d742;
+}
+
+.widget {
+    margin-bottom: 0;
+}
+
+.widget ul.menu li{
+	display: inline-block;
+}
+
+/*.widget_nav_menu ul li::before*/
+.widget ul.menu li::before{
+	content: none;
+}
+
+.norm_row.sfsi_wDiv{
+	width: 100% !important;
+    text-align: center !important;
+    position: relative !important;
+}
+
+.sfsi_holders{
+	height: 12px !important;
+}
+
+/*betaal*/
+.col-full.content-child-3 {
+    /* text-align: center; */
+    width: 120px;
+    padding: 20px 0;
+}
+
+.widget.widget_media_image {
+    margin: 0 5px;
+    width: 50px;
+    float: left;
+}
+
+
+/* customizer */
+/*.sp-header-row:nth-child(3) {
+    background-color:rgba(81, 185, 176, 1);
+}
+
+.site-header-cart:hover .widget_shopping_cart{
+    display:none
+}
+
+.icon-basket-loaded:before {
+    content: "\e04d";
+}
+
+.widget_nav_menu ul li{
+    padding-left:0.5em;
+}
+
+#menu-legal.menu li a{
+    border-right:1px solid rgba(0,0,0,.3);
+    padding-right: 0.5em;
+}
+
+#menu-legal.menu li:last-child a{
+    border-right:none;
+    padding-right: 0.5em;
+}
+
+#mc_embed_signup input.button {
+    display: inline-block !important;
+}
+
+#mc_embed_signup input.email {
+    display: inline-block !important;
+    float: left;
+}
+
+.col-full.content-child-3 {
+    width: 300px;
+}
+
+.site-header-cart .cart-contents {
+    width: 62px;
+    float: right;
+}
+
+.site-header-cart .cart-contents .count {
+    display: none;
+}
+*/
