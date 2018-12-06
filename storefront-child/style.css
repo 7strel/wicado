@@ -11,123 +11,6 @@ License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  storefront-child
 Tags:         e-commerce, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready, rtl-language-support, footer-widgets, sticky-post, theme-options
 */
-
-/*CSS from Customizer extra CSS */
-
-@media (max-width:430px)
-{
-	div.sfsi_wicons.shuffeldiv
-	{
-		width:30px!important;
-	}
-	
-	.widget.widget_media_image {
-    width: 35px;
-}
-}
-
-@media (min-width: 768px)
-{
-	.sp-header-row:nth-child(2)
-	{
-		margin-top: 25px;
-		margin-bottom: 25px;
-	}
-
-	.site-search
-	{
-		margin-top:60px;
-	}
-	
-	.sp-header-row:nth-child(3)
-	{
-		background-color:rgba(81, 185, 176, 1);
-	}
-
-	.site-header-cart:hover 	.widget_shopping_cart{
-	display:none
-}
-
-.icon-basket-loaded:before {
-    content: "\e04d";
-}
-
-.widget_nav_menu ul li{
-	padding-left:0.5em;
-}
-
-.storefront-secondary-navigation.woocommerce-active .site-header .site-branding
-	{
-    width: auto;
-}
-.site-header-cart .cart-contents {
-	padding-top:75px;
-	padding-bottom:0;
-}
-	.site-header-cart .cart-contents::after{
-		line-height:0.8em;
-	}
-	.content-child-2{
-		max-width: 300px;
-    padding: 0.25em 0 0.9em;
-	}
-	
-.site-main {
-    padding-top: 4.235801032em;
-	}
-}
-
-#post-43{
-	display:none;
-}
-
-#menu-legal.menu li a{
-	border-right:1px solid rgba(0,0,0,.3);
-	padding-right: 0.5em;
-}
-
-#menu-legal.menu li:last-child a{
-	border-right:none;
-	padding-right: 0.5em;
-}
-
-#mc_embed_signup input.button {
-    display: inline-block !important;
-}
-
-#mc_embed_signup input.email {
-    display: inline-block !important;
-    float: left;
-}
-
-.col-full.content-child-3 {
-    width: 300px;
-}
-
-.site-header-cart .cart-contents {
-    width: 82px;
-    float: right;
-}
-
-.site-header-cart .cart-contents .count {
-    display: none;
-}
-
-#custom_html-4.widget_text{
-	    font-size: 19px;
-    font-family: Ruda;
-    letter-spacing: 0px;
-    line-height: 25px;
-    font-style: normal;
-    font-weight: 400;
-	color:#000;
-}
-
-.sp-section-description {
-    padding-bottom: 2.617924em;
-}
-/*End CSS from Customizer*/
-
 .sp-header-row:nth-child(3) {
 	background-color: #81d742;
 }
@@ -168,10 +51,33 @@ Tags:         e-commerce, two-columns, left-sidebar, right-sidebar, custom-backg
     float: left;
 }
 
+.col-promotion{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .8em;
+    box-sizing: content-box;
+}
+
+.widget_promotion p{
+    margin: 0;
+}
+
+.promotion {
+    text-align: center;
+}
+
+.col{
+    padding: 1.41575em 0;
+    background-color: #51b9b0;
+}
+
+.col * {
+    color: #fff;
+}
+
 
 /* customizer */
-
-
 /*.sp-header-row:nth-child(3) {
     background-color:rgba(81, 185, 176, 1);
 }

@@ -28,13 +28,27 @@ add_filter( 'woocommerce_subcategory_count_html', '__return_false' );
 
 /*
 ================================================
-Add custom before contentslider
+Add Widget Promotion and Slider before content
 ================================================
 */
 
 function child_theme_init() {
-		add_action ('storefront_before_content', 'slider', 5);
+	add_action ('storefront_before_content', 'promotion', 4);
+	add_action ('storefront_before_content', 'slider', 5);
+}
+
+function promotion() 
+{
+	if ( is_active_sidebar( 'content-promotion' ) )
+	{
+	?> 
+		<div class="col-promotion">
+			<div class="promotion"><?php dynamic_sidebar( 'content-promotion' ); ?></div>
+		</div>
+
+	<?php
 	}
+}
 
 function slider() {
 	if (is_page(43)) {
@@ -45,6 +59,7 @@ function slider() {
 }
 
 add_action ( 'init', 'child_theme_init' );
+
 
 /*
 ================================================
@@ -72,7 +87,11 @@ function storefront_child_before_footer() {
 
 function call_action() {
 	?>
-		<div class="col-full"><?php dynamic_sidebar( 'content-child-4' ); ?></div>
+		<div class="col">
+			<div class="col-full">
+				<?php dynamic_sidebar( 'content-child-4' ); ?>
+			</div>
+		</div>
 	<?php
 }
 
@@ -140,6 +159,16 @@ Register custom widget area.
 
 /* Register our sidebars and widgetized areas */
 function register_storefront_child_widgets() {
+
+	register_sidebar( array(
+		'id'          => 'content-promotion',
+		'name'        => __( 'Promotion', 'storefront' ),
+		'description' => __( 'Widgets added to this region will appear beneath the main menu and above the slider content.', 'storefront' ),
+		'before_widget' => '<div id="%1$s" class="widget_promotion %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<span class="gamma widget-title">',
+		'after_title'   => '</span>',
+	) );
 	
 	register_sidebar( array(
 		'id'          => 'content-slider',
