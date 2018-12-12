@@ -11,9 +11,6 @@ License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  storefront-child
 Tags:         e-commerce, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready, rtl-language-support, footer-widgets, sticky-post, theme-options
 */
-.sp-header-row:nth-child(3) {
-	background-color: #81d742;
-}
 
 .widget {
     margin-bottom: 0;
