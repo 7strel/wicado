@@ -73,6 +73,10 @@ Tags:         e-commerce, two-columns, left-sidebar, right-sidebar, custom-backg
     color: #fff;
 }
 
+#mc_embed_signup .button{
+    background-color: #fff;
+    color: #51b9b0;
+}
 
 /* customizer */
 /*.sp-header-row:nth-child(3) {
